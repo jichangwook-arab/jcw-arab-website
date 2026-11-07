@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرب تشانغووك | Ji Chang Wook Arab</title>
+    <style>
+        :root {
+            --bg-color: #0f0f13;
+            --card-bg: #181820;
+            --accent-color: #c084fc;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: #272735;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        header { background-color: rgba(15, 15, 19, 0.95); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); }
+        .logo { font-size: 1.3rem; font-weight: bold; color: var(--text-main); display: flex; align-items: center; gap: 10px; }
+        .logo span { color: var(--accent-color); }
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav ul li a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; font-size: 0.95rem; }
+        nav ul li a.active, nav ul li a:hover { color: var(--accent-color); }
+        .hero { text-align: center; padding: 8rem 1rem; background: linear-gradient(180deg, rgba(15, 15, 19, 0.75) 0%, rgba(15, 15, 19, 0.95) 100%), url('background.png') no-repeat center center/cover; border-bottom: 1px solid var(--border-color); }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; color: var(--text-main); text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7); }
+        .hero p { font-size: 1.15rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7); }
+        .about-section { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 2.5rem; margin: 3rem auto; display: flex; align-items: center; gap: 2.5rem; }
+        .about-image { flex: 1; max-width: 320px; }
+        .about-image img { width: 100%; border-radius: 12px; border: 2px solid var(--border-color); box-shadow: 0 8px 25px rgba(0,0,0,0.5); object-fit: cover; }
+        .about-content { flex: 2; }
+        .about-content h2 { font-size: 1.8rem; color: var(--accent-color); margin-bottom: 1rem; }
+        .about-content p { color: var(--text-muted); font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.8; }
+        .actor-info-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; list-style: none; background: rgba(15, 15, 19, 0.6); padding: 1.2rem; border-radius: 10px; border: 1px solid var(--border-color); }
+        .actor-info-list li { color: var(--text-main); font-size: 0.9rem; }
+        .actor-info-list li span { color: var(--accent-color); font-weight: bold; }
+        .container { max-width: 1200px; margin: 3rem auto; padding: 0 1.5rem; }
+        .section-title { font-size: 1.5rem; margin-bottom: 2rem; border-right: 4px solid var(--accent-color); padding-right: 12px; color: var(--text-main); }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .news-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, border-color 0.3s ease; }
+        .news-card:hover { transform: translateY(-5px); border-color: var(--accent-color); }
+        .news-card img { width: 100%; height: 220px; object-fit: cover; }
+        .news-content { padding: 1.5rem; }
+        .news-date { font-size: 0.8rem; color: var(--accent-color); margin-bottom: 0.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .news-content h3 { font-size: 1.2rem; margin-bottom: 0.8rem; color: var(--text-main); }
+        @media (max-width: 768px) { .about-section { flex-direction: column; text-align: center; } .about-image { max-width: 100%; } }
+        footer { background-color: var(--bg-color); color: var(--text-muted); text-align: center; padding: 2rem; margin-top: 5rem; border-top: 1px solid var(--border-color); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Arab <span>JCW</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="upcoming.html">الأعمال القادمة</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>عرب جي تشانغ ووك</h1>
+        <p>الحساب العربي الأول المختص بترجمة أخبار الممثل جي تشانغ ووك ومنصتك المباشرة لكل جديد.</p>
+    </section>
+
+    <div class="container">
+        <section class="about-section">
+            <div class="about-image">
+                <img src="jcw_profile.png" alt="جي تشانغ ووك">
+            </div>
+            <div class="about-content">
+                <h2>من هو جي تشانغ ووك؟</h2>
+                <p>مُمثل ومغني كوري جنوبي بارز، يُعد واحداً من أبرز نجوم الصف الأول في الساحة الفنية الآسيوية. حقق شهرة عالمية واسعة بفضل تنوع أدوار التمثيل الباهرة بين الأكشن والدراما والكوميديا الرومانسية.</p>
+                <ul class="actor-info-list">
+                    <li><span>الاسم الكوري:</span> 지창욱 (Ji Chang Wook)</li>
+                    <li><span>تاريخ الميلاد:</span> 5 يوليو 1987</li>
+                    <li><span>المهنة:</span> ممثل، مغني مسرحي</li>
+                </ul>
+            </div>
+        </section>
+
+        <h2 class="section-title">آخر الأخبار</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <img src="hmns.png" alt="صورة إيفنت إندونيسيا">
+                <div class="news-content">
+                    <div class="news-date">26 نوفمبر 2026</div>
+                    <h3>حضور إيفنت العلامة التجارية HMNS في جاكرتا</h3>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="merrywin.png" alt="صورة مسلسل ميري بيري لوف">
+                <div class="news-content">
+                    <div class="news-date">نوفمبر 2026</div>
+                    <h3>تصدر "Merry Berry Love" الواسع على ديزني+</h3>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="aaamc.png" alt="صورة تقديم الحفل">
+                <div class="news-content">
+                    <div class="news-date">6 ديسمبر 2026</div>
+                    <h3>اختياره رسمياً كمقدم حفل جوائز AAA</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 | عرب جي تشانغ ووك (Arab JCW)</p>
+    </footer>
+</body>
+</html>

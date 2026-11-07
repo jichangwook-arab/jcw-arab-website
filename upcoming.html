@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأعمال القادمة | عرب تشانغووك</title>
+    <style>
+        :root {
+            --bg-color: #0f0f13;
+            --card-bg: #181820;
+            --accent-color: #c084fc;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: #272735;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        header { background-color: rgba(15, 15, 19, 0.95); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); }
+        .logo { font-size: 1.3rem; font-weight: bold; color: var(--text-main); display: flex; align-items: center; gap: 10px; }
+        .logo span { color: var(--accent-color); }
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav ul li a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; font-size: 0.95rem; }
+        nav ul li a.active, nav ul li a:hover { color: var(--accent-color); }
+        .page-header { text-align: center; padding: 4rem 1rem 2rem; border-bottom: 1px solid var(--border-color); background: linear-gradient(180deg, rgba(24, 24, 32, 0.4) 0%, rgba(15, 15, 19, 1) 100%); }
+        .page-header h1 { font-size: 2.2rem; color: var(--text-main); margin-bottom: 0.5rem; }
+        .page-header p { color: var(--text-muted); font-size: 1rem; }
+        .container { max-width: 1100px; margin: 3rem auto; padding: 0 1.5rem; }
+        .dramas-list { display: flex; flex-direction: column; gap: 2rem; }
+        .drama-card { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; overflow: hidden; display: flex; transition: transform 0.3s ease, border-color 0.3s ease; }
+        .drama-card:hover { transform: translateY(-4px); border-color: var(--accent-color); }
+        .drama-poster { flex: 1; max-width: 280px; min-width: 220px; }
+        .drama-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .drama-details { flex: 2; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; }
+        .drama-tag { display: inline-block; background: rgba(192, 132, 252, 0.15); color: var(--accent-color); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; width: fit-content; margin-bottom: 0.8rem; }
+        .drama-title { font-size: 1.6rem; color: var(--text-main); margin-bottom: 0.8rem; }
+        .drama-info { display: flex; gap: 1.5rem; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .drama-info span strong { color: var(--text-main); }
+        .drama-desc { color: var(--text-muted); font-size: 0.95net; line-height: 1.7; margin-bottom: 1.5rem; }
+        @media (max-width: 768px) { .drama-card { flex-direction: column; } .drama-poster { max-width: 100%; height: 300px; } }
+        footer { background-color: var(--bg-color); color: var(--text-muted); text-align: center; padding: 2rem; margin-top: 5rem; border-top: 1px solid var(--border-color); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Arab <span>JCW</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="upcoming.html" class="active">الأعمال القادمة</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="gallery.html">المعرض</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>قائمة الأعمال والدرامات المرتقبة</h1>
+        <p>استعرض أحدث المسلسلات، الأفلام، والمشاريع القادمة للنجم جي تشانغ ووك</p>
+    </section>
+
+    <div class="container">
+        <div class="dramas-list">
+            <div class="drama-card">
+                <div class="drama-poster"><img src="human_gumiho.png" alt="Human X Gumiho"></div>
+                <div class="drama-details">
+                    <div>
+                        <span class="drama-tag">دراما فانتازيا / كوميدي رومانس</span>
+                        <h2 class="drama-title">الانسان × الثعلبة (Human X Gumiho)</h2>
+                        <div class="drama-info">
+                            <span>حالة العرض: <strong>قيد التصوير</strong></span>
+                            <span>المنصة: <strong>Prime Video</strong></span>
+                            <span>تاريخ العرض: <strong>نهاية مارس / بداية أبريل 2027</strong></span>
+                        </div>
+                        <p class="drama-desc">مسلسل فانتازيا رومانسية كوميدية منتظر، يشارك في بطولته جي تشانغ ووك مع النجمة جون جي هيون. تدور قصة حب خيالية وغير تقليدية بين كائن ساحر وبشري.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drama-card">
+                <div class="drama-poster"><img src="the_generals.png" alt="The Generals"></div>
+                <div class="drama-details">
+                    <div>
+                        <span class="drama-tag">فيلم دراما سياسية وعسكرية</span>
+                        <h2 class="drama-title">الجنرالات (The Generals)</h2>
+                        <div class="drama-info">
+                            <span>حالة العرض: <strong>قيد الإنتاج</strong></span>
+                            <span>المنصة: <strong>Netflix</strong></span>
+                            <span>تاريخ العرض: <strong>2027</strong></span>
+                        </div>
+                        <p class="drama-desc">فيلم سينمائي ضخم مرتقب من إنتاج نتفليكس وعمل مشترك، يجسد فيه جي تشانغ ووك شخصية (Heo Hak-seong) في دراما سياسية وتاريخية تحبس الأنفاس.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="drama-card">
+                <div class="drama-poster"><img src="men_harem.png" alt="Men of the Harem"></div>
+                <div class="drama-details">
+                    <div>
+                        <span class="drama-tag">دراما تاريخية / خيالية</span>
+                        <h2 class="drama-title">رجال الحريم (Men of the Harem)</h2>
+                        <div class="drama-info">
+                            <span>حالة العرض: <strong>قيد التصوير</strong></span>
+                            <span>المنصة: <strong>tvN / Netflix</strong></span>
+                        </div>
+                        <p class="drama-desc">مقتبس عن رواية الويب الشهيرة التي تدور أحداثها في إطار تاريخي وخيالي حول الإمبراطورية وصراع السلطة، وسط ترقب كبير لمشاركة النجم.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 | عرب جي تشانغ ووك (Arab JCW)</p>
+    </footer>
+</body>
+</html>
