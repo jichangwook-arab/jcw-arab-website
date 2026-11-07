@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: jichangwook-arab/jcw-arab-website
+  name: git-gateway
   branch: main
 
 media_folder: "images"
